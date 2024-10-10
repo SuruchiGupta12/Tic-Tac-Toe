@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: radial-gradient( circle farthest-corner at 48.4% 47.5%,  rgba(122,183,255,1) 0%, rgba(21,83,161,1) 90% );
+    text-align: center;
+}
+
+h1{
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+}
+
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    width: 60vmin;
+    height: 60vmin;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box{
+    width: 18vmin;
+    height: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    color: #e6df29;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+
+
+#msg{
+    color: #ffffc7;
+    font-size: 8vmin;
+}
+
+.msg-container{
+    height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.hide{
+    display: none;
+}
+
+button {
+    transition: transform 0.1s ease; /* Smooth transition when scaling */
+}
+
+/* Scale the button slightly when clicked */
+button:active {
+    transform: scale(1.1); /* Scale the button up by 10% */
+}
+
+#reset-btn, #new-btn {
+    padding: 20px;
+    background-color: black;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    transition: transform 0.1s ease; /* Smooth transition */
+}
+
+#reset-btn:active, #new-btn:active {
+    transform: scale(1.1); /* Slight pop-up effect when clicked */
+}
+
+/* Color for X */
+.x-color {
+    color: rgb(171, 31, 31);
+}
+
+/* Color for O */
+.o-color {
+    color: rgb(237, 220, 29);
+}
